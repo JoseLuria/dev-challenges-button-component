@@ -1,0 +1,10 @@
+.FooterText {
+  color: #A9A9A9;
+  font-size: 0.875rem;
+}
+
+.FooterText > a {
+  color: #A9A9A9;
+  font-weight: 700;
+  text-decoration: underline;
+}

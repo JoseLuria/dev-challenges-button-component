@@ -1,0 +1,132 @@
+:root {
+  /* Text Colors */
+  --defaultText: #3F3F3F;
+  --varianText: #FFFFFF;
+  --disabledText: #9E9E9E;
+
+  /* Colors */
+  --default: #E0E0E0;
+  --primary: #3D5AFE;
+  --secondary: #455A64;
+  --danger: #D32F2F;
+
+  /* Hover Colors */
+  --hoverDefault: #AEAEAE;
+  --hoverPrimary: #0039CB;
+  --hoverSecondary: #1C313A;
+  --hoverDanger: #9A0007;
+  --hoverOutline: #2962FF1A;
+}
+
+/* Default Style */
+.customButton {
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--default);
+  color: var(--defaultText);
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customButton:hover, .customButton:focus{
+  background-color: var(--hoverDefault);
+}
+
+/* Icon Style */
+.material-icons {
+  font-size: 18px;
+}
+
+/* Colors */
+.default {
+  background-color: var(--default);
+  color: var(--defaultText);
+}
+
+.default:hover .default:focus {
+  background-color: var(--hoverDefault);
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--varianText);
+}
+
+.primary:hover, .primary:focus {
+  background-color: var(--hoverPrimary);
+}
+
+.secondary {
+  background-color: var(--secondary);
+  color: var(--varianText);
+}
+
+.secondary:hover, .secondary:focus {
+  background-color: var(--hoverSecondary);
+}
+
+.danger {
+  background-color: var(--danger);
+  color: var(--varianText);
+}
+
+.danger:hover, .danger:focus {
+  background-color: var(--hoverDanger);
+}
+
+/* Variants */
+.text {
+  background: none;
+  color: var(--primary);
+  box-shadow: none;
+}
+.text:hover, .text:focus{
+  background-color: var(--hoverOutline);
+}
+
+.outline {
+  background: none;
+  color: var(--primary);
+  border: solid 1px var(--primary);
+  box-shadow: none;
+}
+.outline:hover, .outline:focus{
+  background-color: var(--hoverOutline);
+}
+
+/* Disabled */
+.customButton:disabled {
+  background-color: var(--default);
+  color: var(--disabledText);
+  box-shadow: none;
+}
+
+.text:disabled{
+  background: none;
+  color: var(--disabledText);
+}
+
+/* Size */
+.sm {
+  padding: 0.375rem 0.75rem;
+}
+
+.md {
+  padding: 0.5rem 1rem;
+}
+
+.lg {
+  padding: 0.688rem 1.375rem;
+}
+
+/* DisableShadow */
+.noShadow {
+  box-shadow: none;
+}

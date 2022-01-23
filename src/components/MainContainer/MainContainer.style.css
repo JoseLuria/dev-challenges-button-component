@@ -1,0 +1,15 @@
+.MainContainer {
+  margin-bottom: 52px;
+}
+
+.MainContainer > h1 {
+  font-size: 1.5rem;
+  color: #4F4F4F;
+  margin-bottom: 28px;
+}
+
+.MainButtons{
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
